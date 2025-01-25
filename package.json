@@ -11,7 +11,8 @@
     "services:stop": "docker compose -f infra/compose.yaml stop",
     "services:down": "docker compose -f infra/compose.yaml down",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "test:coverage": "vitest --coverage"
   },
   "author": "Leonardo Anders",
   "license": "ISC",
@@ -19,6 +20,7 @@
     "@rocketseat/eslint-config": "2.2.2",
     "@types/bcryptjs": "2.4.6",
     "@types/node": "22.10.2",
+    "@vitest/coverage-v8": "3.0.4",
     "eslint": "8.57.1",
     "prisma": "6.1.0",
     "tsup": "8.3.5",
